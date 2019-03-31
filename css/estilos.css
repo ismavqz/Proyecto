@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+position: fixed;
+width: 100%;
+padding-top: 10px;
+box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+opacity: 0.8;
+background: #E0E0E0;
+}
+
+
+header a{
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+
+header #marca{
+	float: left;
+	margin-left: 10%;
+}
+
+header #marca h1{
+	font-size: 25px;
+	margin-bottom: 5%;
+}
+
+nav{
+	float: right;
+	margin-top: 1px;
+	margin-right: 5%;
+	transition: 1s;    
+}
+
+
+nav li a{
+	font-weight: bold;
+	line-height: 1em;
+	display: inline-flex;
+}
+
+
+nav > li{
+	float: left;
+}
+
+nav li a:hover{
+	color: #000;
+	background-color: #F7F5F5;
+	height: 25px;
+	align-items: center;
+	font-weight: bold;
+}
+
+nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 240px;
+
+}
+nav li:hover > ul{
+	display: block;
+}
+
+
+#cabecera{
+	margin: auto;
+	background-color: #FAF9F9;
+	color: #01FCF9;
+	text-align: center;
+	display: block;
+	min-height: 300px;
+}
+#cabecera p{
+	color: #640101;
+	font: arial, Helvetica, sans-serif;
+}
+.separar{
+	margin-top: 3%;
+	display: inline-block;
+}
+
+.resaltado{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+img{
+	width: 80px;
+}
+
+.lgn{
+	margin: auto;
+	border: 1px solid #01B4FF;
+	margin-top: 10px;
+	width: 25%;
+	border-radius: 5px;
+	font-size: 20px;
+	height: 130px;
+}
+
+.login{
+
+	margin: auto;
+	width: 100%;
+	line-height: 1.5em;
+}
+.boton{
+	height: 25px;
+	display: block;
+	margin: auto;
+
+}
+
+
+
+.registro{
+
+	margin: auto;
+	width: 100%;
+	line-height: 1.5em;
+}
+.reg{
+	margin: auto;
+	border: 1px solid #01B4FF;
+	margin-top: 10px;
+	width: 25%;
+	border-radius: 5px;
+	font-size: 20px;
+	height: 160px;
+}
+
+
+
+

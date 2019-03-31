@@ -1,0 +1,28 @@
+create database ceprobi;
+use ceprobi;
+
+create table Transporte(
+	Id_Transporte  in auto_increment not null,	
+	Nombre_Resp    varchar(30) not null,
+	Folio          int not null,
+	AreaAds        varchar(100) not null,
+	
+	primary key(Id_Transporte)
+);
+
+
+create table usuarios(
+
+	Id_usuario   int auto_increment not null,
+	Nombre       varchar(20) not null,
+	Usuario      varchar(30) not null,
+	Password     varchar(30) not null,
+	Tipo_usuario varchar(15) not null,
+
+	primary key(Id_usuario)
+);
+
+Nombre       Ismael
+Usuario      ivqz
+Tipo_usuario Administrador
+contraseña   Password

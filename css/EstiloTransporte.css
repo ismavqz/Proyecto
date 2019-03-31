@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*------------- Estilo header -------------------*/
+header{
+position: fixed;
+width: 100%;
+padding-top: 10px;
+box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+/*opacity: 0.8;*/
+background: #E0E0E0;
+}
+
+
+header a{
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+
+header #marca{
+	float: left;
+	margin-left: 10%;
+}
+
+header #marca h1{
+	font-size: 25px;
+	margin-bottom: 5%;
+}
+
+nav{
+	float: right;
+	margin-top: 1px;
+	margin-right: 5%;
+	transition: 1s;    
+}
+
+
+nav li a{
+	font-weight: bold;
+	line-height: 1em;
+	display: inline-flex;
+}
+
+
+nav > li{
+	float: left;
+}
+
+nav li a:hover{
+	color: #000;
+	background-color: #F7F5F5;
+	height: 25px;
+	align-items: center;
+	font-weight: bold;
+}
+
+nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 240px;
+
+}
+nav li:hover > ul{
+	display: block;
+}
+
+
+.separar{
+	margin-top: 5%;
+	display: inline-block;
+}
+/*---------Termina Estilo Header ---------------------------------*/
+
+
+/*-------- Estilo tabla ---------*/
+
+table{
+	border-collapse: collapse;
+	font-size: 12px;
+	font-family: 'arial';
+	width: 100%;
+	margin: auto;
+	border: 1px solid #0760BB;
+	
+}
+
+form{
+	width: 75%;
+	margin: auto;
+	margin-bottom: 3%;
+
+}
+
+
+table th{
+	text-align: center;
+	padding: 10px;
+	background: #3d7ba8;
+	color: #FFF;
+}
+table td{
+	padding: 5px;
+}
+table th{
+	width: 50%;
+}
+
+table td{
+	text-align: right;
+	
+}
+
+input{
+	width: 99%;
+}
+
+select{
+	width: 100%;	
+}
+
+.btn{
+	width: 50%;
+	height: 30px;
+	border-radius: 4px;
+
+}
+
+.Centro{
+	text-align: center;
+	background: #ccc;
+}
+.Centrar{
+	text-align: center;
+	background: #0686FE;
+}
+.Izq{
+	text-align: left;
+}
+.check{
+	width: 2em;
+}
+
+textarea{
+	width: 100%;
+}
+
+.boton{
+	width: 10%;
+	height: 35px;
+	border-radius: 6px;
+	display: block;
+	margin: auto;
+	background: #139E01;
+	color: #E6E3E3;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;	
+}
