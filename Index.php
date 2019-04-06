@@ -1,3 +1,13 @@
+<?php 
+session_start();
+if (isset($_SESSION["tipoUsuario"]) == "Auxiliar") {
+			echo'<script type="text/javascript">
+					window.location="TransporteAuxiliar.php";
+				</script>
+			';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +34,7 @@
 					<li class="actual"><a href="Index.php">Inicio</a></li>
 					<li ><a href="#">Servicios</a>
 						<ul class="serv">
-							<li><a href="ServicioTransporte.php">Servicios de Transporte</a></li>
+							<li><a href="TransporteUsuario.php">Servicios de Transporte</a></li>
 						</ul>
 					</li>
 					<li ><a href="Login.php">Iniciar Sesion</a></li>

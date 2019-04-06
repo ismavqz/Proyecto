@@ -23,10 +23,11 @@ $(document).ready(function(){
 
 		$.ajax({
 			type  : 'POST',
-			url   : 'Transporte.php',
+			url   : 'TransporteUsuario.php',
 			data  : datos,
 			success: function(data){
-				alert("Se envio correctamente");
+				$('#envio').html("Se envio correctamente");
+
 				$('input[type = "text"').attr('disabled', 'disabled');
 				DesEnviar();
 
@@ -35,6 +36,7 @@ $(document).ready(function(){
 	
 			return false;
 
+			DesForm();
 	});
 	//deshabilitar boton enviar
 	function DesEnviar(){
@@ -42,9 +44,11 @@ $(document).ready(function(){
 		$('#Botton').attr('disabled','disabled');
 
 	}
+	
 	//deshabilitar boton Actualizar
 	function DesAct(){
 		$('#Act').attr('disabled','disabled');
 
 	}
+
 });

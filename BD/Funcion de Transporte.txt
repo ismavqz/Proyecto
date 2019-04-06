@@ -1,0 +1,31 @@
+El sitema contiene un menu
+-> Inicio
+-> Servicio de Transporte
+-> Iniciar Sesion
+-> Registrarse
+
+-------
+1.-en el menu de servicio de transporte usuario llenará unicamente una parte: desde nombre hasta Descripcion del viaje
+2.- al iniciar sesion en auxiliar aparecera otro formulario igual, este formulario contendra la informacion que solicitó el usuario
+   para posteriormente llenar la siguiente parte desde control de flota vehicular hasta depto de gestion Administrativa
+3.- pero solo se podran llenar los sig campos antes de enviar al responsable
+   
+   - la informacion que ya lleno el usuario
+   - vehiculo
+   -placas
+   -operador 
+   -kilometro salida
+   -combustible salida
+   -hora salida
+   -observaciones salida
+   -solicitante
+   -jefe responsable
+   -depto gestion administrativa
+
+   - cuando los datos se envien a comprobacion al responsable, este podra aprobar o rechazar los datos
+   - si se aprueba, se activa
+        -kilometro y combustible de entrada
+        -boton de enviar(base de datos)
+   
+   -si se rechaza, se volvera a corregir alguna parte del formulario en auxiliar
+   - el tercer boton de cancelar, sucede cuando los datos ya han sido llenados y aprobados, pero se cancela el viaje, y se manda a la bd con un status de viaje cancelado  

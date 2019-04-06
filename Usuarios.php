@@ -10,7 +10,7 @@
 		$nivel = $_POST['niv'];
 
 
-
+		//se realiza el registro de usuarios a la BD
 		$sql = "INSERT INTO usuarios(Nombre, Usuario, Password, Tipo_usuario) values('$nombre', '$user', '$pass', '$nivel')";
 
 		$res = mysqli_query($link, $sql);
@@ -90,8 +90,9 @@
 						<td>
 							<select name="niv" id="" style="width: 170px;" required>
 								<option value=""></option>
-								<option value="Administrador">Administrador</option>
 								<option value="Usuario">Usuario</option>
+								<option value="Auxiliar">Auxiliar</option>
+								<option value="Responsable">Responsable</option>
 							</select>
 						</td>
 					</tr>

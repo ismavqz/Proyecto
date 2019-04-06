@@ -1,36 +1,3 @@
-<?php
-	include('conect.php');
-	$link = conectarse();
-	if (isset($_POST['btn'])) {
-		
-		$user = $_POST['txtUsuario'];
-		$pass = $_POST['txtContra'];
-		$nivel = $_POST['niv'];
-
-		//se hace la consulta para iniciar sesion
-		$sql = "SELECT * FROM Usuarios Where Usuario = '$user' and Password = '$pass' and Tipo_usuario = '$nivel'";
-
-		$res = mysqli_query($link, $sql);
-		
-		if (mysqli_num_rows($res) > 0 && $nivel == "Administrador") {
-		 	$row = mysqli_fetch_array($res);
-			$_SESSION["user"] = $row['Usuario'];
-
-			echo'<script type="text/javascript">
-					
-					window.location.href="Transporte.php";
-				</script>
-				';
-		 }
-		 if (mysqli_num_rows($res) == 0 && $nivel != "Administrador"){
-		 	echo'<script type="text/javascript">
-					alert("Usuario/contraseña incorrecta");
-					window.location.href="Login.php";
-				</script>
-				';
-		 }
-	}
-?>
 
 
 <!DOCTYPE html>
@@ -88,15 +55,16 @@
 
 	<div class="modal">
 		<div class="bodyModal">
-			<form method="post" action="" class="lgn">
+			<form method="post" action="Sesiones.php" class="lgn">
 				<table class="login">
 					<tr>
 						<td>Tipo de Usuario: </td>
 						<td>
 							<select name="niv" id="" style="width: 170px;">
 								<option value=""></option>
-								<option value="Administrador">Administrador</option>
 								<option value="Usuario">Usuario</option>
+								<option value="Auxiliar">Auxiliar</option>
+								<option value="Responsable">Responsable</option>
 							</select>
 						</td>
 					</tr>
@@ -115,3 +83,4 @@
 	</div>	
 </body>
 </html>
+
